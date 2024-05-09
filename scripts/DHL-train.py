@@ -290,7 +290,7 @@ def main():
     
     dtpL=['RNAPOL2','CTCF']#'CTCF'#  #'CTCF'
     #dln={'RNAPOL2':{'tr':150000,'ts':15000},'CTCF':{'tr':250000,'ts':20000}}       ##  Train with 50%  data 
-    dln={'RNAPOL2':{'tr':300000,'ts':15000},'CTCF':{'tr':500000,'ts':20000}}      ##  Train with 100% data
+    dln={'RNAPOL2':{'tr':300000,'ts':15000},'CTCF':{'tr':500000,'ts':20000},}      ##  Train with 100% data
 
     #dln={'RNAPOL2':{'tr':5000,'ts':5000},'CTCF':{'tr':5000,'ts':5000}}
 
@@ -299,7 +299,7 @@ def main():
         TrD,TrL,TsD,TsL=loadDataSet(obj,Root,dtp,trC,tsC)
         # print(TrD.shape,TrL.shape)
 
-        MLAlg=['SVMo']#'RF','KNN']#,'SVM'] 'SVMi',
+        MLAlg=['SVMo','RF','KNN']#,'SVM'] 'SVMi',
         begin_time=datetime.now()
         #TRnDtype=[True,False]
         #for TrnWholeD in TRnDtype:
